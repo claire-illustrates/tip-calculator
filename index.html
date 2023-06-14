@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claire Browne">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Splitter Tip calculator</title>
+
+</head>
+
+<body>
+
+    <main>
+
+        <h1 class="main-heading">Splitter <span class="main-heading-desc">Tip Calculator</span></h1>
+
+        <div class="calculator">
+
+            <section aria-label="Enter your information" class="input-div">
+
+                <div class="bill">
+                    <label class="input-label" for="bill">Bill Amount</label>
+                    <input class="input" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" id="bill"
+                        value="" autocomplete="off">
+                        <span id="errorMessageBill" class="error-message hide" role="alert"></span>
+                </div>
+
+                <p id="select-heading" class="input-label"> Select Tip </p>
+                <div class="buttons">
+                    <button id="five" class="percent-button" aria-labelledby="select-heading five">5%</button>
+                    <button id="ten" class="percent-button" aria-labelledby="select-heading ten">10%</button>
+                    <button id="fifteen" class="percent-button" aria-labelledby="select-heading fifteen">15%</button>
+                    <button id="twentyFive" class="percent-button"
+                        aria-labelledby="select-heading twentyFive">25%</button>
+                    <button id="fifty" class="percent-button" aria-labelledby="select-heading fifty">50%</button>
+                    <input class="custom-input" type="text" inputmode="numeric" pattern="[0-9]*"
+                        placeholder="Custom" id="customInput" value=""
+                        aria-label="Enter tip percentage in format 00">
+                </div>
+
+                <div class="people">
+                    <label class="input-label" for="peopleInput">Number of People</label>
+                    <input class="input" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0"
+                        id="peopleInput" value="">
+                    <span id="errorMessagePeople" class="error-message hide" role="alert"></span>
+                </div>
+
+            </section>
+
+            <section class="result-div" aria-label="Tip Calculation Results">
+
+                <div class="totals" id="totals">
+
+                    <div class="total-div first-total" aria-live="polite" aria-atomic="true">
+                            <label class="total" for="person"> Tip Amount
+                                <span class="person"> per person</span>
+                            </label>
+                            <output id="person" class="per-person">$0.00</output>
+                        
+                    </div>
+
+                    <div class="total-div" aria-live="polite" aria-atomic="true">
+                            <label class="total" for="total"> Total
+                                <span class="person"> per person</span>
+                            </label>
+                            <output id="total" class="per-person">$0.00</output>
+                    </div>
+
+                </div>
+                <button class="reset" id="reset">RESET</button>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
