@@ -2,13 +2,6 @@
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
 
-## Table of contents
-
-- [The challenge](#the-challenge)
-- [Screenshot](#screenshot)
-- [My process](#my-process)
-- [Built with](#built-with)
-
 ### The challenge
 
 Users should be able to:
