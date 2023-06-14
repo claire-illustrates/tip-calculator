@@ -14,6 +14,11 @@ Users should be able to:
 
 ![](./screenshot.png)
 
+### Links
+
+- Solution URL: https://github.com/claire-illustrates/tip-calculator
+- Live Site URL: https://claire-illustrates.github.io/tip-calculator/
+
 ## My process
 
 I started with the challenge as suggested by frontendmentor then redesigned it visually based on the Casio Personal Mini calculator, released around 1975.
