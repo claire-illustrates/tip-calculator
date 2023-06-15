@@ -37,15 +37,14 @@ header,
 
 .percent-button,
 .reset {
-    background-color: #2CB48D;
+    background-color: #b7dad4;
 }
 
 .custom-input,
 .custom-input::placeholder,
 .input,
-.input::placeholder,
-.per-person {
-    color: #2CB48D;
+.input::placeholder {
+    color: #FBF0C4;
 }
 
 /* Black */
@@ -85,10 +84,10 @@ header,
     margin-bottom: 2%;
 }
 
-.custom-input .input,
+/* .custom-input .input,
 .percent-button {
     border-radius: 5px;
-}
+} */
 
 .main-heading {
     font-size: 48px;
@@ -105,7 +104,7 @@ header,
 
 .calculator {
     align-items: center;
-    background: url(../images/calculator-simple.png) center/contain no-repeat;
+    background: url(../images/calculator.png) center/contain no-repeat;
     justify-content: space-evenly;
     margin: 5% auto;
     /* padding: 3%; */
@@ -120,7 +119,7 @@ header,
     border: 1px solid #000;
     border-radius: 10px;
     /* margin: 2% 0 0 1%; */
-    padding: 1%;
+    padding: 2%;
     width: 45%;
 }
 
@@ -170,14 +169,13 @@ input:focus::-webkit-input-placeholder {
 }
 
 .custom-input {
-    border: 2px solid #2CB48D;
+    border: none;
     padding: 3px;
     text-align: center;
     width: 28%;
 }
 
 .custom-input:focus {
-    border: none;
     outline: 4px solid #FF6218;
 }
 
@@ -191,14 +189,15 @@ input:focus::-webkit-input-placeholder {
     /* left: 3%;
     margin-top: 4%;
     position: relative; */
-    padding: 1.5% 0;
+    padding: 3.2% 0;
     width: 45%;
 }
 
 .totals {
-    border: 2px solid #2CB48D;
-    border-radius: 20px;
+    /* border: 2px solid #fff; */
+    /* border-radius: 20px; */
     /* margin: 5% 0 0 5%; */
+    margin-bottom: 2%;
     padding: 6% 0;
     width: 90%;
 }
@@ -222,8 +221,8 @@ input:focus::-webkit-input-placeholder {
 }
 
 .reset {
-    border-radius: 10px;
-    border: 3px solid #000;
+    /* border-radius: 10px; */
+    border: 2px solid #000;
     margin: 1% 0 0 0;
     padding: 5px;
     width: 90%;
@@ -235,6 +234,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .per-person {
+    color: #FBF0C4;
     font-size: 24px;
     font-size: 1.5rem;
     width: 50%;
@@ -375,8 +375,8 @@ input:focus::-webkit-input-placeholder {
     .totals {
         border-radius: 10px;
         margin: 0;
-        padding: 5% 0;
-        width: 100%;
+        padding: 5% 2%;
+        width: 98%;
     }
 
     .total-div {
@@ -464,6 +464,10 @@ input:focus::-webkit-input-placeholder {
             padding: 0;
         }
 
+        .totals {
+            border-radius: 0;
+        }
+
         .total {
             font-size: 14.4px;
             font-size: 0.9rem;
@@ -479,7 +483,6 @@ input:focus::-webkit-input-placeholder {
         }
 
         .reset {
-            border-radius: 5px;
             font-size: 12px;
             font-size: 0.75rem;
             margin: 2.5% auto;
