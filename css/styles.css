@@ -40,8 +40,11 @@ header,
     background-color: #b7dad4;
 }
 
+/* Yellow */
+
 .custom-input,
 .custom-input::placeholder,
+.per-person,
 .input,
 .input::placeholder {
     color: #FBF0C4;
@@ -84,10 +87,13 @@ header,
     margin-bottom: 2%;
 }
 
-/* .custom-input .input,
-.percent-button {
+.custom-input,
+.input,
+.percent-button,
+.reset,
+.totals {
     border-radius: 5px;
-} */
+}
 
 .main-heading {
     font-size: 48px;
@@ -115,10 +121,8 @@ header,
 /* Input Div */
 
 .input-div {
-    background-color: #FFFBCC;
     border: 1px solid #000;
     border-radius: 10px;
-    /* margin: 2% 0 0 1%; */
     padding: 2%;
     width: 45%;
 }
@@ -183,20 +187,13 @@ input:focus::-webkit-input-placeholder {
 
 .result-div {
     align-items: center;
-    background-color: #FFFBCC;
     border: 1px solid #000;
     border-radius: 10px;
-    /* left: 3%;
-    margin-top: 4%;
-    position: relative; */
     padding: 3.2% 0;
     width: 45%;
 }
 
 .totals {
-    /* border: 2px solid #fff; */
-    /* border-radius: 20px; */
-    /* margin: 5% 0 0 5%; */
     margin-bottom: 2%;
     padding: 6% 0;
     width: 90%;
@@ -221,7 +218,6 @@ input:focus::-webkit-input-placeholder {
 }
 
 .reset {
-    /* border-radius: 10px; */
     border: 2px solid #000;
     margin: 1% 0 0 0;
     padding: 5px;
@@ -234,7 +230,6 @@ input:focus::-webkit-input-placeholder {
 }
 
 .per-person {
-    color: #FBF0C4;
     font-size: 24px;
     font-size: 1.5rem;
     width: 50%;
@@ -358,9 +353,9 @@ input:focus::-webkit-input-placeholder {
     }
 
     .custom-input {
-        margin: auto;
-        padding: 5px;
-        width: 45%;
+        margin-bottom: 3%;
+        padding: 2.75%;
+        width: 40%;
     }
 
     .people {
@@ -368,12 +363,12 @@ input:focus::-webkit-input-placeholder {
     }
 
     .percent-button {
+        margin-bottom: 3%;
         padding: 2%;
-        width: 50%;
+        width: 45%;
     }
 
     .totals {
-        border-radius: 10px;
         margin: 0;
         padding: 5% 2%;
         width: 98%;
@@ -402,8 +397,11 @@ input:focus::-webkit-input-placeholder {
 
         .custom-input,
         .input,
+        .input-label,
         .input::placeholder,
-        .percent-button {
+        .percent-button,
+        .reset,
+        .total {
             font-size: 16px;
             font-size: 1rem;
         }
@@ -430,11 +428,6 @@ input:focus::-webkit-input-placeholder {
         .input-div {
             margin: 0 0 35% 0;
             width: 65%;
-        }
-
-        .input-label {
-            font-size: 12px;
-            font-size: 0.75rem;
         }
 
         .result-div {
@@ -464,15 +457,6 @@ input:focus::-webkit-input-placeholder {
             padding: 0;
         }
 
-        .totals {
-            border-radius: 0;
-        }
-
-        .total {
-            font-size: 14.4px;
-            font-size: 0.9rem;
-        }
-
         .first-total {
             margin-bottom: 5%;
         }
@@ -483,9 +467,8 @@ input:focus::-webkit-input-placeholder {
         }
 
         .reset {
-            font-size: 12px;
-            font-size: 0.75rem;
             margin: 2.5% auto;
+            padding: 1% 5%;
         }
 
     }
