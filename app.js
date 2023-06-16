@@ -105,7 +105,7 @@ resetButton.addEventListener('click', function () {
   numberOfPeopleValue = 1;
   personTipOutput.innerHTML = '$0.00';
   totalTipOutput.innerHTML = '$0.00';
-  resetButton.style.backgroundColor = '#2CB48D';
+  resetButton.style.backgroundColor = '#F5907B';
   resetButton.style.outline = 'none';
   resetButton.style.color = '#000';
 });
