@@ -59,15 +59,8 @@ header,
 
 .custom-input,
 .input,
-.totals,
-.reset:focus {
+.totals {
     background-color: #000;
-}
-
-.percent-button,
-.percent-button:focus,
-.reset {
-    color: #000;
 }
 
 /* Font Sizes */
@@ -145,9 +138,9 @@ header,
 }
 
 .input:focus {
-    border: solid 2px #FF6218;
+    border: solid 2px #F5907B;
     cursor: pointer;
-    outline: 4px solid #FF6218;
+    outline: 4px solid #F5907B;
 }
 
 input:focus::-webkit-input-placeholder {
@@ -172,7 +165,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .percent-button:focus {
-    background: #FF6218;
+    background: #F5907B;
     border: 2px solid #000;
     outline: 2px solid #000;
 }
@@ -185,7 +178,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .custom-input:focus {
-    outline: 4px solid #FF6218;
+    outline: 4px solid #F5907B;
 }
 
 /* Result Div */
@@ -230,8 +223,12 @@ input:focus::-webkit-input-placeholder {
 }
 
 .reset:focus {
-    color: #fff;
-    outline: 3px solid #FF6218;
+    background: #F5907B;
+    outline: 3px solid #000;
+}
+
+.reset:active {
+    background: #F5907B;
 }
 
 .per-person {
@@ -263,25 +260,24 @@ input:focus::-webkit-input-placeholder {
 @media (hover:hover) and (pointer:fine) {
 
     .input:hover {
-        border: solid 2px #FF6218;
+        border: solid 2px #F5907B;
         cursor: pointer;
-        outline: 2px solid #FF6218;
+        outline: 2px solid #F5907B;
     }
 
     .percent-button:hover {
-        background: #FF6218;
+        background: #F5907B;
         outline: 2px solid #000;
     }
 
     .custom-input:hover {
-        outline: solid 3px #FF6218;
+        outline: solid 3px #F5907B;
     }
 
     .reset:hover {
         cursor: pointer;
-        background: #000;
-        border: 3px solid #2CB48D;
-        color: #2CB48D;
+        background: #F5907B;
+        color: #000;
     }
 
 }
