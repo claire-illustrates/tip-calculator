@@ -50,6 +50,11 @@ header,
     color: #FBF0C4;
 }
 
+.input-div,
+.result-div {
+    background: #FBF0C4;
+}
+
 /* Black */
 
 .custom-input,
