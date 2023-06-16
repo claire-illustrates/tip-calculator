@@ -55,7 +55,20 @@ header,
     background: #FBF0C4;
 }
 
+/* Red */
+
+.percent-button:focus,
+.reset:active,
+.reset:focus {
+    background: #F5907B;
+}
+
 /* Black */
+
+.percent-button,
+.reset {
+    color: #000;
+}
 
 .custom-input,
 .input,
@@ -165,7 +178,6 @@ input:focus::-webkit-input-placeholder {
 }
 
 .percent-button:focus {
-    background: #F5907B;
     border: 2px solid #000;
     outline: 2px solid #000;
 }
@@ -223,12 +235,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .reset:focus {
-    background: #F5907B;
     outline: 3px solid #000;
-}
-
-.reset:active {
-    background: #F5907B;
 }
 
 .per-person {
