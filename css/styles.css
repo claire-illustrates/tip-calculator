@@ -133,7 +133,7 @@ header,
 .input-div {
     border: 1px solid #000;
     border-radius: 10px;
-    padding: 2%;
+    padding: 1.5%;
     width: 40%;
 }
 
@@ -277,7 +277,7 @@ input:focus::-webkit-input-placeholder {
     }
 
     .percent-button:hover {
-        background: #F5907B;
+        background: #A3CCE7;
         outline: 2px solid #000;
     }
 
@@ -287,8 +287,10 @@ input:focus::-webkit-input-placeholder {
 
     .reset:hover {
         cursor: pointer;
-        background: #F5907B;
+        background: #A3CCE7;
         color: #000;
+        text-decoration: underline;
+        text-decoration-thickness: 0.15em;
     }
 
 }
