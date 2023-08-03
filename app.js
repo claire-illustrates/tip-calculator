@@ -7,7 +7,6 @@ const totalTipOutput = document.getElementById('total');
 const resetButton = document.getElementById('reset');
 const errorMessagePeople = document.getElementById('errorMessagePeople');
 const errorMessageBill = document.getElementById('errorMessageBill');
-
 const totals = document.getElementById('totals');
 
 let billValue = 0;
@@ -82,7 +81,7 @@ numberOfPeopleInput.addEventListener('input', function (e) {
   }
 });
 
-numberOfPeopleInput.addEventListener('blur',function (e) {
+numberOfPeopleInput.addEventListener('input',function (e) {
   if (isNaN(e.target.value)) {
     errorMessagePeople.classList.remove('hide');
     errorMessagePeople.classList.add('error-message');
@@ -109,3 +108,4 @@ resetButton.addEventListener('click', function () {
   resetButton.style.outline = 'none';
   resetButton.style.color = '#000';
 });
+
