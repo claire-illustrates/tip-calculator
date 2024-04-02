@@ -59,9 +59,9 @@ header,
 
 /* Red */
 
-.percent-button:focus,
+.percent-button:focus-visible,
 .reset:active,
-.reset:focus {
+.reset:focus-visible {
     background: #F5907B;
 }
 
@@ -142,6 +142,7 @@ header,
     box-shadow: inset 1px 1px 0px 1px #D9D9D9, inset -1px -1px 0px 1px #A6A6A6;   
     padding: 2%;
     text-align: end;
+    appearance: none;
     -webkit-appearance: none;
 }
 
@@ -151,13 +152,11 @@ header,
     margin-right: 10px;
 }
 
-.input:focus {
-    border: solid 2px #F5907B;
-    cursor: pointer;
-    outline: 4px solid #F5907B;
+.input:focus-visible {
+    outline: 3px solid #000;
 }
 
-input:focus::-webkit-input-placeholder {
+input:focus-visible::-webkit-input-placeholder {
     color: transparent;
 }
 
@@ -179,9 +178,10 @@ input:focus::-webkit-input-placeholder {
     width: 30%;
 }
 
-.percent-button:focus {
-    border: 2px solid #000;
-    outline: 2px solid #000;
+.percent-button:focus-visible {
+    background-color: #A3CCE7;
+    border-radius: 20px;
+    outline: 1px solid #000;
 }
 
 .custom-input {
@@ -193,8 +193,9 @@ input:focus::-webkit-input-placeholder {
     width: 28%;
 }
 
-.custom-input:focus {
-    outline: 4px solid #F5907B;
+.custom-input:focus-visible {
+    border-radius: 20px;
+    outline: 1px solid #000;
 }
 
 /* Result Div */
@@ -239,8 +240,11 @@ input:focus::-webkit-input-placeholder {
     width: 90%;
 }
 
-.reset:focus {
-    outline: 3px solid #000;
+.reset:focus-visible {
+    background: #A3CCE7;
+    outline: 1px solid #000;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
 }
 
 .per-person {
@@ -272,18 +276,19 @@ input:focus::-webkit-input-placeholder {
 @media (hover:hover) and (pointer:fine) {
 
     .input:hover {
-        border: solid 2px #F5907B;
         cursor: pointer;
-        outline: 2px solid #F5907B;
-    }
-
-    .percent-button:hover {
-        background: #A3CCE7;
         outline: 2px solid #000;
     }
 
+    .percent-button:hover {
+        background-color: #A3CCE7;
+        border-radius: 20px;
+        outline: 1px solid #000;
+    }
+
     .custom-input:hover {
-        outline: solid 3px #F5907B;
+        border-radius: 20px;
+        outline: solid 2px #000;
     }
 
     .reset:hover {
@@ -291,7 +296,7 @@ input:focus::-webkit-input-placeholder {
         background: #A3CCE7;
         color: #000;
         text-decoration: underline;
-        text-decoration-thickness: 0.15em;
+        text-decoration-thickness: 0.2em;
     }
 
 }
@@ -327,7 +332,7 @@ input:focus::-webkit-input-placeholder {
 
     .main-heading {
         margin: 0 auto;
-        padding: 4%;
+        padding: 2%;
         text-align: center;
     }
 
@@ -363,7 +368,7 @@ input:focus::-webkit-input-placeholder {
     }
 
     .input {
-        padding: 10px 0;
+        padding: 10px;
     }
 
     .buttons {
@@ -372,7 +377,7 @@ input:focus::-webkit-input-placeholder {
 
     .custom-input {
         margin-bottom: 3%;
-        padding: 2.75%;
+        padding: 1% 2.5%;
         width: 40%;
     }
 
@@ -424,10 +429,6 @@ input:focus::-webkit-input-placeholder {
             font-size: 1rem;
         }
 
-        body {
-            background: #fff;
-        }
-
         .main-heading {
             font-size: 32px;
             font-size: 2rem;
@@ -437,6 +438,10 @@ input:focus::-webkit-input-placeholder {
         .main-heading-desc {
             font-size: 20px;
             font-size: 1.25rem;
+        }
+
+        body {
+            background: #fff;
         }
 
         .logo {
